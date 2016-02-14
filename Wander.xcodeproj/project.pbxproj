@@ -15,6 +15,13 @@
 		BCA4F7ED1C700643008A230E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F7EB1C700643008A230E /* LaunchScreen.storyboard */; };
 		BCA4F7F81C700643008A230E /* WanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4F7F71C700643008A230E /* WanderTests.swift */; };
 		BCA4F8031C700643008A230E /* WanderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4F8021C700643008A230E /* WanderUITests.swift */; };
+		BCA4F8171C7007A9008A230E /* ClearSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8101C7007A9008A230E /* ClearSans-Bold.ttf */; };
+		BCA4F8191C7007A9008A230E /* ClearSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8121C7007A9008A230E /* ClearSans-Light.ttf */; };
+		BCA4F81B1C7007A9008A230E /* ClearSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8141C7007A9008A230E /* ClearSans-Medium.ttf */; };
+		BCA4F81C1C7007A9008A230E /* ClearSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8151C7007A9008A230E /* ClearSans-Regular.ttf */; };
+		BCA4F81D1C7007A9008A230E /* ClearSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8161C7007A9008A230E /* ClearSans-Thin.ttf */; };
+		BCA4F8201C700D3E008A230E /* oval@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F81F1C700D3E008A230E /* oval@2x.png */; };
+		BCA4F8231C700DBD008A230E /* oval.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA4F8221C700DBD008A230E /* oval.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		BCA4F7FE1C700643008A230E /* WanderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA4F8021C700643008A230E /* WanderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderUITests.swift; sourceTree = "<group>"; };
 		BCA4F8041C700643008A230E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA4F8101C7007A9008A230E /* ClearSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Bold.ttf"; sourceTree = "<group>"; };
+		BCA4F8121C7007A9008A230E /* ClearSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Light.ttf"; sourceTree = "<group>"; };
+		BCA4F8141C7007A9008A230E /* ClearSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Medium.ttf"; sourceTree = "<group>"; };
+		BCA4F8151C7007A9008A230E /* ClearSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Regular.ttf"; sourceTree = "<group>"; };
+		BCA4F8161C7007A9008A230E /* ClearSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClearSans-Thin.ttf"; sourceTree = "<group>"; };
+		BCA4F81F1C700D3E008A230E /* oval@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oval@2x.png"; sourceTree = "<group>"; };
+		BCA4F8221C700DBD008A230E /* oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oval.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,8 @@
 		BCA4F7DE1C700643008A230E /* Wander */ = {
 			isa = PBXGroup;
 			children = (
+				BCA4F8211C700D48008A230E /* images */,
+				BCA4F81E1C7007B0008A230E /* fonts */,
 				BCA4F7DF1C700643008A230E /* AppDelegate.swift */,
 				BCA4F7E11C700643008A230E /* ViewController.swift */,
 				BCA4F7E31C700643008A230E /* Main.storyboard */,
@@ -126,6 +142,27 @@
 				BCA4F8041C700643008A230E /* Info.plist */,
 			);
 			path = WanderUITests;
+			sourceTree = "<group>";
+		};
+		BCA4F81E1C7007B0008A230E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4F8101C7007A9008A230E /* ClearSans-Bold.ttf */,
+				BCA4F8121C7007A9008A230E /* ClearSans-Light.ttf */,
+				BCA4F8141C7007A9008A230E /* ClearSans-Medium.ttf */,
+				BCA4F8151C7007A9008A230E /* ClearSans-Regular.ttf */,
+				BCA4F8161C7007A9008A230E /* ClearSans-Thin.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		BCA4F8211C700D48008A230E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4F8221C700DBD008A230E /* oval.png */,
+				BCA4F81F1C700D3E008A230E /* oval@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +270,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4F81D1C7007A9008A230E /* ClearSans-Thin.ttf in Resources */,
+				BCA4F8231C700DBD008A230E /* oval.png in Resources */,
+				BCA4F8191C7007A9008A230E /* ClearSans-Light.ttf in Resources */,
+				BCA4F8201C700D3E008A230E /* oval@2x.png in Resources */,
+				BCA4F8171C7007A9008A230E /* ClearSans-Bold.ttf in Resources */,
+				BCA4F81B1C7007A9008A230E /* ClearSans-Medium.ttf in Resources */,
 				BCA4F7ED1C700643008A230E /* LaunchScreen.storyboard in Resources */,
+				BCA4F81C1C7007A9008A230E /* ClearSans-Regular.ttf in Resources */,
 				BCA4F7EA1C700643008A230E /* Assets.xcassets in Resources */,
 				BCA4F7E51C700643008A230E /* Main.storyboard in Resources */,
 			);

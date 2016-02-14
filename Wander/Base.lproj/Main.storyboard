@@ -3,7 +3,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ClearSans-Light.ttf">
+            <string>ClearSans-Light</string>
+        </mutableArray>
+        <mutableArray key="ClearSans-Regular.ttf">
+            <string>ClearSans</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,11 +25,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2h-F3-BG8">
+                                <rect key="frame" x="0.0" y="536" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.76862745098039209" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="T64-Vk-LT6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ClearSans" family="Clear Sans" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="CONTINUE ➔">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-Ga-l9C">
+                                <rect key="frame" x="150" y="60" width="300" height="420"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="oval.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVK-y6-7eZ">
+                                        <rect key="frame" x="46" y="8" width="208" height="208"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="208" id="pVK-9J-zAX"/>
+                                            <constraint firstAttribute="width" constant="208" id="uSA-sH-rlZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tell us how you like to travel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-RE-bcX">
+                                        <rect key="frame" x="56" y="224" width="189" height="89"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="89" id="TrP-U4-ifp"/>
+                                            <constraint firstAttribute="width" constant="189" id="cDd-ya-rtv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ClearSans-Light" family="Clear Sans Light" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.43137254901960786" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="XY1-Wz-5xw"/>
+                                    <constraint firstItem="A1O-RE-bcX" firstAttribute="top" secondItem="uVK-y6-7eZ" secondAttribute="bottom" constant="8" id="bHz-KN-Oib"/>
+                                    <constraint firstItem="uVK-y6-7eZ" firstAttribute="top" secondItem="MsB-Ga-l9C" secondAttribute="top" constant="8" id="ha3-lV-lY0"/>
+                                    <constraint firstAttribute="height" constant="420" id="qND-pT-gCD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y2h-F3-BG8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="4JL-xu-08D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y2h-F3-BG8" secondAttribute="bottom" id="AKq-1v-lyN"/>
+                            <constraint firstItem="MsB-Ga-l9C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AOI-4g-RFf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y2h-F3-BG8" secondAttribute="trailing" constant="-20" id="INg-fn-nMg"/>
+                            <constraint firstItem="MsB-Ga-l9C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGm-Ya-4J0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="293" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="oval.png" width="127" height="127"/>
+    </resources>
 </document>
